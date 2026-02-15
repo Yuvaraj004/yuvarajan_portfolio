@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, MousePointerClick } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import profileImg from "../assets/profile.jpeg";
 
 const TypingAnimation = ({ text }: { text: string }) => {
     const characters = text.split("");
@@ -126,10 +128,12 @@ export default function Hero() {
                             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full group">
                                 <div className="absolute inset-0 bg-red-600 rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 animate-pulse" />
                                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-red-900/30 shadow-2xl z-10 bg-black flex items-center justify-center">
-                                    <img
-                                        src={process.env.NODE_ENV === "production" ? "/Portfolio_yuvarajan/profile.jpeg" : "/profile.jpeg"}
+                                    <Image
+                                        src={profileImg}
                                         alt="Mr. Yuvarajan"
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
+                                        priority
                                     />
                                 </div>
                             </div>
