@@ -26,6 +26,15 @@ const experienceData = [
             "Performed data cleaning and interpretation for business cases.",
         ],
     },
+    {
+        role: "Junior Grade Intern",
+        company: "Crescent Music School",
+        period: "2024",
+        description: [
+            "Assisted instructors and coordinated student activities.",
+            "Developed communication, teamwork, and responsibility.",
+        ],
+    },
 ];
 
 export default function Experience() {
