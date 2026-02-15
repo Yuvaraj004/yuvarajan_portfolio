@@ -21,7 +21,7 @@ const TypingAnimation = ({ text }: { text: string }) => {
                         repeatDelay: 5,
                         repeatType: "reverse",
                     }}
-                    className="text-xl md:text-2xl font-mono text-primary"
+                    className="text-xl md:text-2xl font-mono text-red-500"
                 >
                     {char}
                 </motion.span>
@@ -32,11 +32,11 @@ const TypingAnimation = ({ text }: { text: string }) => {
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
-            {/* Background Particles/Shapes */}
+        <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
+            {/* Background Particles/Shapes - Adjusted for Red/Black Theme */}
             <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
                 <motion.div
-                    className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"
+                    className="absolute top-1/4 left-1/4 w-72 h-72 bg-red-900/10 rounded-full blur-3xl"
                     animate={{
                         x: [0, 50, -50, 0],
                         y: [0, -50, 50, 0],
@@ -48,7 +48,7 @@ export default function Hero() {
                     }}
                 />
                 <motion.div
-                    className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
+                    className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-red-800/10 rounded-full blur-3xl"
                     animate={{
                         x: [0, -70, 70, 0],
                         y: [0, 70, -70, 0],
@@ -70,16 +70,16 @@ export default function Hero() {
                         transition={{ duration: 0.8 }}
                         className="flex-1 text-center md:text-left space-y-6"
                     >
-                        <h2 className="text-secondary font-medium tracking-wide text-lg">
+                        <h2 className="text-red-500 font-medium tracking-wide text-lg">
                             Hello, I&apos;m
                         </h2>
-                        <h1 className="text-5xl md:text-7xl font-bold text-slate-100 tracking-tight">
+                        <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
                             Mr. Yuvarajan
                         </h1>
 
                         <TypingAnimation text="Data Scientist | ML Engineer | AI Enthusiast" />
 
-                        <p className="text-slate-400 text-lg max-w-2xl leading-relaxed mx-auto md:mx-0">
+                        <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mx-auto md:mx-0">
                             Data Science professional with experience in data analysis and the
                             development of machine learning and deep learning solutions.
                             Proficient in Python and skilled in implementing ML, DL, and AI
@@ -87,13 +87,13 @@ export default function Hero() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
-                            <Button size="lg" className="group" asChild>
+                            <Button size="lg" className="group bg-red-600 hover:bg-red-700 text-white border-0" asChild>
                                 <a href="#projects">
                                     View Projects
                                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </a>
                             </Button>
-                            <Button variant="outline" size="lg" className="group border-slate-700 hover:border-primary/50" asChild>
+                            <Button variant="outline" size="lg" className="group border-gray-800 text-gray-300 hover:border-red-500 hover:text-red-500 bg-transparent" asChild>
                                 <a href="https://drive.google.com/file/d/1h0lYfYPszHyKwGrFYjbxFOU-pCdqPyiB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
                                     <Download className="mr-2 w-4 h-4 group-hover:animate-bounce" />
                                     Download Resume
@@ -101,14 +101,14 @@ export default function Hero() {
                             </Button>
                         </div>
 
-                        <div className="flex items-center gap-6 justify-center md:justify-start pt-8 text-slate-400">
-                            <a href="https://github.com/Yuvaraj004" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                        <div className="flex items-center gap-6 justify-center md:justify-start pt-8 text-gray-500">
+                            <a href="https://github.com/Yuvaraj004" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors">
                                 <Github className="w-6 h-6" />
                             </a>
-                            <a href="https://www.linkedin.com/in/yuvarajan-g-55393b351" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                            <a href="https://www.linkedin.com/in/yuvarajan-g-55393b351" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors">
                                 <Linkedin className="w-6 h-6" />
                             </a>
-                            <div className="h-px w-20 bg-slate-800 hidden md:block" />
+                            <div className="h-px w-20 bg-gray-800 hidden md:block" />
                             <span className="text-sm hidden md:block">Connect with me</span>
                         </div>
                     </motion.div>
@@ -121,58 +121,35 @@ export default function Hero() {
                         className="flex-1 relative hidden md:block"
                     >
                         <div className="relative w-full max-w-md mx-auto aspect-square flex items-center justify-center">
-                            {/* Floating Elements mimicking Data Nodes */}
+
+                            {/* Profile Image with Red Glow */}
+                            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full group">
+                                <div className="absolute inset-0 bg-red-600 rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 animate-pulse" />
+                                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-red-900/30 shadow-2xl z-10 bg-black flex items-center justify-center">
+                                    <img
+                                        src="/profile.jpeg"
+                                        alt="Mr. Yuvarajan"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Decorative Elements */}
                             <motion.div
-                                className="absolute top-0 right-0 p-4 glass-card rounded-2xl border-l-4 border-l-primary z-20"
+                                className="absolute top-0 right-0 p-4 glass-card rounded-2xl border-l-4 border-l-red-500 z-20"
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                                        <span className="text-primary font-bold">ML</span>
+                                    <div className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
+                                        <span className="text-red-500 font-bold">ML</span>
                                     </div>
                                     <div>
-                                        <p className="text-xs text-slate-400">Model Accuracy</p>
-                                        <p className="font-bold text-slate-200">98.5%</p>
+                                        <p className="text-xs text-gray-400">Accuracy</p>
+                                        <p className="font-bold text-gray-200">98.5%</p>
                                     </div>
                                 </div>
                             </motion.div>
-
-                            <motion.div
-                                className="absolute bottom-10 -left-4 p-4 glass-card rounded-2xl border-l-4 border-l-purple-500 z-20"
-                                animate={{ y: [0, 15, 0] }}
-                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                            >
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center">
-                                        <span className="text-purple-400 font-bold">AI</span>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-slate-400">Deep Learning</p>
-                                        <p className="font-bold text-slate-200">Neural Networks</p>
-                                    </div>
-                                </div>
-                            </motion.div>
-
-                            {/* Image Placeholder */}
-                            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl z-10 bg-slate-800/50 flex items-center justify-center group">
-                                {/* Replace src with your actual image path, e.g., "/profile.jpg" */}
-                                <div className="text-slate-500 text-center p-4">
-                                    <p className="mb-2 text-sm">Add your photo here</p>
-                                    <p className="text-xs text-slate-600">/public/profile.jpg</p>
-                                </div>
-                                {/* Example of usage when you have the image:
-                    <img 
-                        src="/profile.jpg" 
-                        alt="Mr. Yuvarajan" 
-                        className="w-full h-full object-cover"
-                    /> 
-                    */}
-                                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                            </div>
-
-                            {/* Decorative Circle Behind */}
-                            <div className="absolute inset-4 bg-gradient-to-tr from-primary/10 to-purple-500/10 rounded-full blur-2xl -z-10" />
                         </div>
                     </motion.div>
                 </div>

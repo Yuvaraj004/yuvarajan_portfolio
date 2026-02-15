@@ -33,7 +33,7 @@ export default function Skills() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500 mb-4">
+                    <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-900 mb-4">
                         Technical Skills
                     </h2>
                     <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
@@ -72,7 +72,7 @@ export default function Skills() {
                                 </div>
                                 <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
                                     <motion.div
-                                        className="h-full bg-gradient-to-r from-primary to-purple-500"
+                                        className="h-full bg-gradient-to-r from-red-600 to-red-900"
                                         initial={{ width: 0 }}
                                         whileInView={{ width: `${85 + Math.random() * 10}%` }}
                                         viewport={{ once: true }}

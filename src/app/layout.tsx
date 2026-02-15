@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import TechBackground from "@/components/TechBackground";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const poppins = Poppins({
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth dark">
       <body className={`${inter.variable} ${poppins.variable} font-sans bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground`}>
+        <TechBackground />
         <Navbar />
         <main className="min-h-screen">
           {children}
