@@ -52,7 +52,7 @@ export default function Contact() {
 
                         <div className="flex items-center justify-center gap-4 text-slate-400">
                             <div className="flex items-center gap-2">
-                                <span className="w-5 h-5 flex items-center justify-center">📍</span>
+                                <span className="w-5 h-5 flex items-center justify-center"></span>
                                 Vellore, Tamil Nadu
                             </div>
                             <span>|</span>

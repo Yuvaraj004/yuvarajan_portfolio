@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Film, Github, Layers, Zap } from "lucide-react";
+import { Activity, ExternalLink, Film, Github, Layers, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const projects = [
@@ -40,6 +40,18 @@ const projects = [
         tags: ["Python", "PyTorch", "ViT", "Computer Vision"],
         icon: <Layers className="w-10 h-10 text-blue-500" />,
         gradient: "from-red-500/20 to-blue-900/20",
+    },
+    {
+        title: "AI-Based Oral Cancer Prediction System",
+        description: "Machine learning and image analysis system for oral cancer screening.",
+        details: [
+            "Developed a machine learning and image analysis system using oral cavity images.",
+            "Implemented image preprocessing and pattern identification to detect abnormal tissues.",
+            "Designed an intuitive web interface for clinical assistance and early warning support.",
+        ],
+        tags: ["Python", "Machine Learning", "Computer Vision", "Streamlit"],
+        icon: <Activity className="w-10 h-10 text-emerald-500" />,
+        gradient: "from-red-500/20 to-emerald-900/20",
     },
 ];
 

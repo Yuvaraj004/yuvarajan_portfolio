@@ -23,9 +23,9 @@ const TypingAnimation = ({ text }: { text: string }) => {
                         repeatDelay: 5,
                         repeatType: "reverse",
                     }}
-                    className="text-xl md:text-2xl font-mono text-red-500"
+                    className="text-xl md:text-2xl font-mono text-red-500 whitespace-pre"
                 >
-                    {char}
+                    {char === " " ? "\u00A0" : char}
                 </motion.span>
             ))}
         </div>
@@ -79,7 +79,7 @@ export default function Hero() {
                             Mr. Yuvarajan
                         </h1>
 
-                        <TypingAnimation text="Data Scientist | ML Engineer | AI Enthusiast" />
+                        <TypingAnimation text="Data   Scientist  |  ML Engineer    | AI Enthusiast" />
 
                         <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mx-auto md:mx-0">
                             Data Science professional with experience in data analysis and the
@@ -96,7 +96,7 @@ export default function Hero() {
                                 </a>
                             </Button>
                             <Button variant="outline" size="lg" className="group border-gray-800 text-gray-300 hover:border-red-500 hover:text-red-500 bg-transparent" asChild>
-                                <a href="https://drive.google.com/file/d/1h0lYfYPszHyKwGrFYjbxFOU-pCdqPyiB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                                <a href="https://drive.google.com/file/d/1aeirlScyexISrxutdLdaOzPIdMCMVZ1C/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
                                     <Download className="mr-2 w-4 h-4 group-hover:animate-bounce" />
                                     Download Resume
                                 </a>

@@ -8,12 +8,12 @@ import { Badge } from "@/components/ui/badge";
 const professionalData = [
     {
         role: "Python Programming Intern",
-        company: "Aspire Systems",
+        company: "Aspire Systems India Pvt Ltd.",
         period: "Jan 2026 – Mar 2026",
         description: [
-            "Gained hands-on exposure to Python development practices.",
-            "Participated in agile workflows and daily stand-ups.",
-            "Experienced corporate IT environment and collaboration tools.",
+            "Gained hands-on experience in Python development and standard IT industry practices.",
+            "Participated in project workflows, daily stand-ups, and structured technical training sessions.",
+            "Completed a stipend-based corporate internship with real-world project exposure.",
         ],
     },
     {

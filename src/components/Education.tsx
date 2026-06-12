@@ -10,7 +10,7 @@ const educationData = [
         institution: "Vellore Institute of Technology",
         degree: "M.Sc Data Science",
         period: "2024–Present",
-        grade: "CGPA: 8.65 / 10",
+        grade: "CGPA: 8.72 / 10",
         description: "Specializing in Advanced Machine Learning, Big Data Analytics, and AI.",
     },
     {
