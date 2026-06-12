@@ -76,7 +76,7 @@ export default function Hero() {
                             Hello, I&apos;m
                         </h2>
                         <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
-                            Mr. Yuvarajan
+                            Yuvarajan G
                         </h1>
 
                         <TypingAnimation text="Data   Scientist  |  ML Engineer    | AI Enthusiast" />
@@ -130,7 +130,7 @@ export default function Hero() {
                                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-red-900/30 shadow-2xl z-10 bg-black flex items-center justify-center">
                                     <Image
                                         src={profileImg}
-                                        alt="Mr. Yuvarajan"
+                                        alt=" Yuvarajan G"
                                         fill
                                         className="object-cover"
                                         priority
