@@ -1,10 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Activity, ExternalLink, Film, Github, Layers, Zap } from "lucide-react";
+import { Activity, ExternalLink, Film, Github, Layers, Zap, MessageSquare, TrendingUp, ShoppingBag } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const projects = [
+    {
+        title: "Enterprise RAG AI Assistant",
+        description: "Retrieval-Augmented Generation chatbot for PDF document analysis.",
+        details: [
+            "Developed a Retrieval-Augmented Generation chatbot to answer questions from PDF documents using LLMs, integrating LangChain and OpenAI/Gemini APIs for context-aware responses.",
+            "Implemented semantic search with Sentence Transformers and deployed an interactive Streamlit application for document-based AI conversations.",
+        ],
+        tags: ["Python", "LangChain", "FAISS", "Hugging Face", "Streamlit", "APIs"],
+        icon: <MessageSquare className="w-10 h-10 text-red-500" />,
+        gradient: "from-red-500/20 to-zinc-900/20",
+    },
+    {
+        title: "Smart Retail Analytics & Inventory Management System",
+        description: "End-to-end retail analytics platform automating sales and inventory reporting.",
+        details: [
+            "Designed an end-to-end retail analytics platform automating sales and inventory reporting for 100K+ transaction records; built ETL pipeline and RESTful APIs with full CRUD operations.",
+            "Optimized complex SQL queries and database schema, reducing report generation time by 40%.",
+        ],
+        tags: ["Python", "Flask", "PostgreSQL", "Power BI", "REST API", "SQL Query Optimization"],
+        icon: <TrendingUp className="w-10 h-10 text-orange-500" />,
+        gradient: "from-orange-500/20 to-zinc-900/20",
+    },
+    {
+        title: "Customer Shopping Behavior Analysis",
+        description: "ETL pipeline and interactive dashboard analyzing shopping trends.",
+        details: [
+            "Built an end-to-end ETL pipeline to extract, clean, and transform a retail dataset of 3,900 customer records across 18 attributes using Python (Pandas), then loaded it into PostgreSQL.",
+            "Wrote optimized SQL queries to analyze customer behavior across 4 product categories, 50 states, and 6 payment methods, identifying purchase and discount trends totaling $233K+.",
+            "Developed an interactive Power BI dashboard visualizing KPIs including average purchase value, discount usage, subscription rate, and review ratings for stakeholder reporting.",
+        ],
+        tags: ["Python", "PostgreSQL", "Power BI", "Pandas", "ETL", "SQL Query Optimization"],
+        icon: <ShoppingBag className="w-10 h-10 text-blue-500" />,
+        gradient: "from-blue-500/20 to-zinc-900/20",
+    },
     {
         title: "Emotion-Based Movie Recommendation System",
         description: "Personalized movie suggestions based on user emotions.",

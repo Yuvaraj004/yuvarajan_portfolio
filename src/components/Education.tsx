@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Calendar } from "lucide-react";
+import { GraduationCap, Calendar, Award } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -29,6 +29,34 @@ const educationData = [
     },
 ];
 
+const certificationsData = [
+    {
+        title: "Data Analytics Job Simulation",
+        issuer: "Deloitte (Forage)",
+        description: "Completed practical tasks in forensic technology and data analysis, resolving data cleaning and interpretation issues for client business cases.",
+    },
+    {
+        title: "Python and SQL for Data Science",
+        issuer: "Scaler Topics",
+        description: "Comprehensive training in analytical Python libraries, SQL database schema queries, and data extraction pipelines.",
+    },
+    {
+        title: "AI & Machine Learning Projects",
+        issuer: "Simplilearn",
+        description: "Hands-on project work developing and evaluating machine learning classification, regression, and clustering models.",
+    },
+    {
+        title: "Introduction to Microsoft Excel",
+        issuer: "Microsoft",
+        description: "Core proficiency in spreadsheets, data organization, lookup functions, pivot tables, and professional reporting.",
+    },
+    {
+        title: "Power BI Data Modeling with DAX",
+        issuer: "Microsoft / Coursera",
+        description: "Advanced modeling techniques using Data Analysis Expressions (DAX) to build scalable reports and KPI metrics.",
+    },
+];
+
 export default function Education() {
     return (
         <section className="py-20 relative overflow-hidden" id="education">
@@ -46,7 +74,7 @@ export default function Education() {
                     <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
                 </motion.div>
 
-                <div className="relative max-w-4xl mx-auto">
+                <div className="relative max-w-4xl mx-auto mb-24">
                     {/* Vertical Line */}
                     <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-slate-800 transform md:-translate-x-1/2" />
 
@@ -93,6 +121,48 @@ export default function Education() {
                                     </CardContent>
                                 </Card>
                             </div>
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* Certifications Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-center mt-24 mb-16"
+                >
+                    <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-900 mb-4">
+                        Certifications & Training
+                    </h2>
+                    <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+                </motion.div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    {certificationsData.map((cert, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.4, delay: index * 0.1 }}
+                        >
+                            <Card className="h-full hover:border-primary/50 transition-all hover:bg-slate-900/40 bg-zinc-950 border-slate-800">
+                                <CardHeader className="pb-2">
+                                    <div className="flex justify-between items-start gap-4">
+                                        <CardTitle className="text-lg font-bold text-slate-100 line-clamp-2">
+                                            {cert.title}
+                                        </CardTitle>
+                                        <Award className="w-6 h-6 text-primary flex-shrink-0" />
+                                    </div>
+                                    <p className="text-primary/80 font-medium text-xs tracking-wider uppercase mt-1">{cert.issuer}</p>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-slate-400 text-xs leading-relaxed">
+                                        {cert.description}
+                                    </p>
+                                </CardContent>
+                            </Card>
                         </motion.div>
                     ))}
                 </div>

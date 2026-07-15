@@ -4,23 +4,54 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
 const skillsData = {
-    Programming: ["Python", "SQL", "C", "HTML", "CSS", "JavaScript"],
-    "Machine Learning": [
-        "scikit-learn",
+    Programming: ["Python", "SQL", "C"],
+    "Machine Learning & AI": [
+        "Scikit-learn",
+        "TensorFlow",
         "Regression",
         "Classification",
         "Clustering",
         "Feature Engineering",
+        "Model Evaluation",
+        "Deep Learning",
+        "NLP",
+        "LLMs",
+        "RAG",
+        "LangChain",
+        "Prompt Engineering",
+        "Hugging Face"
     ],
-    Visualization: ["Tableau", "Power BI", "Matplotlib", "Seaborn"],
-    Tools: ["Jupyter Notebook", "RStudio", "Visual Studio", "MS Office"],
-    "Soft Skills": [
-        "Communication",
-        "Teamwork",
-        "Problem-Solving",
-        "Adaptability",
-        "Leadership",
+    "Data Analysis": [
+        "Pandas",
+        "NumPy",
+        "ETL",
+        "EDA",
+        "Data Cleaning",
+        "Data Wrangling",
+        "Data Transformation",
+        "Statistical Analysis",
+        "Data Visualization"
     ],
+    "Software & Web": [
+        "Data Structures & Algorithms",
+        "OOP",
+        "DBMS",
+        "REST API Design",
+        "Flask",
+        "FastAPI",
+        "Streamlit"
+    ],
+    "Databases & BI": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL Query Optimization",
+        "Power BI",
+        "Tableau",
+        "Matplotlib",
+        "KPI Dashboards",
+        "Excel (Pivot Tables, XLOOKUP, Power Query)"
+    ],
+    Tools: ["Git", "GitHub", "Jupyter Notebook", "VS Code"]
 };
 
 export default function Skills() {

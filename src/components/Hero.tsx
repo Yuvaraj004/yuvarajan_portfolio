@@ -82,10 +82,9 @@ export default function Hero() {
                         <TypingAnimation text="Data   Scientist  |  ML Engineer    | AI Enthusiast" />
 
                         <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mx-auto md:mx-0">
-                            Data Science professional with experience in data analysis and the
-                            development of machine learning and deep learning solutions.
-                            Proficient in Python and skilled in implementing ML, DL, and AI
-                            models to solve real-world problems.
+                            Data Science professional with a Master’s in Data Science and expertise in Python, SQL, Machine Learning, Deep
+                            Learning, NLP, and Generative AI. Experienced in developing ML models, RAG applications, ETL pipelines, REST
+                            APIs, and BI dashboards using Power BI and Tableau. Passionate about building scalable, data-driven solutions.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
@@ -96,7 +95,7 @@ export default function Hero() {
                                 </a>
                             </Button>
                             <Button variant="outline" size="lg" className="group border-gray-800 text-gray-300 hover:border-red-500 hover:text-red-500 bg-transparent" asChild>
-                                <a href="https://drive.google.com/file/d/1aeirlScyexISrxutdLdaOzPIdMCMVZ1C/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                                <a href="https://drive.google.com/file/d/1Z-3weD2_qYjIs69YCfHPHwSiKwxd36u4/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
                                     <Download className="mr-2 w-4 h-4 group-hover:animate-bounce" />
                                     Download Resume
                                 </a>
